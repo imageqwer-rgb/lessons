@@ -1,0 +1,104 @@
+* {box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+.options {
+    max-width: 1920px;
+}    
+body {
+    background-color: #f8f8f8;
+    justify-content: center;
+}
+
+.heading {display: flex;
+    justify-content: center;
+    margin-top: 128px;
+    margin-bottom: 96px;
+    color: #01353e;
+    font-size: 48px;
+    
+}
+
+.all_cards {background-color:#ffffff;
+    padding: auto;
+    max-width: 1200px;
+    display: flex;
+    gap: 60px;
+    margin: 0 auto;
+}
+.first {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    height: 577px;
+    width: 360px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    
+
+}
+.second {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 577px;
+    width: 360px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.last {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 577px;
+    width: 360px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+}
+
+.line {
+    list-style-type: none;
+    color: #242121;
+    line-height: 18px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding-left: 31px;
+
+}
+
+.head {color: #01353e;
+    width: 360px;
+    height: 44px;
+    font-size: 36px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 58px;
+}
+.price {
+    display: flex;
+    width: 360px;
+    justify-content: center;
+    align-self: flex-end;
+    color: #01353e;
+    line-height: 40px;
+    font-size: 36px;
+
+}
+.sign {
+    height: 22px;
+    margin-left: 5px;
+    font-size: 18px;
+    position: static;
+}
+.one {
+    margin-top: 117px;
+}
+.two {
+    margin-top: 41px;
+}
+
