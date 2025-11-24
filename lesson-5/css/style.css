@@ -1,0 +1,172 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+}
+
+@media (max-width: 1070px) {
+    .content-wrap-top {
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-wrap-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+}
+
+.content {
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-head {
+    font: 600 40px/1.4 "Open Sans", sans-serif ;
+    color: #333333;
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 26px;
+}
+
+h2::before {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: #2B9AD6;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content-wrap {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.content-wrap-top {
+    display: flex;
+    max-width: 1017px;
+    gap: 100px;
+}
+
+.content-wrap-bottom {
+    display: flex;
+    margin-top: 78px;
+    gap: 100px;
+}
+
+.card {
+    position: relative;
+    height: 300px;
+    width: 293px;
+}
+
+.card:hover .card-popup {
+        z-index: 1;
+        visibility: visible;
+        opacity: 1;
+}
+
+.card__foto {
+    position: absolute;
+    z-index: 1;
+    left: 36px;
+    top: 13px;
+    background: #E1E8EE;
+    border-radius: 50%;
+}
+
+.card__link {
+    position: absolute;
+    z-index: 1;
+    top: 160px;
+    left: 195px;
+}
+
+.card__name {
+    position: absolute;
+    font: 700 24px/1.4 "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #194F94;
+    top: 244px;
+    left: 36px;
+}
+
+.card__post {
+    position: absolute;
+    font: 400 17px/1.5 "Open Sans", sans-serif;
+    top: 288px;
+    color: #5F5F5F;
+    left: 36px;
+}
+
+.card-popup {
+    position: relative;
+    width: 293px;
+    z-index: -5;
+    visibility: hidden;
+}
+
+.card-popup__foto-2 {
+    position: absolute;
+    z-index: 1;
+    left: 36px;
+    top: 13px;
+}
+
+.card-popup__link-2 {
+    position: absolute;
+    top: 160px;
+    left: 195px;
+    z-index: 1;
+}
+
+.card-popup__background {
+    position: absolute;
+}
+
+.card-popup__name-2 {
+    position: absolute;
+    font: 700 24px/1.4 "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    top: 244px;
+    left: 36px;
+}
+
+.card-popup__post-2 {
+    position: absolute;
+    font: 400 17px/1.5 "Open Sans", sans-serif;
+    top: 288px;
+    color: #ffffff;
+    left: 36px;
+}
