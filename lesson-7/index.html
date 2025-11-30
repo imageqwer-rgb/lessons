@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-5</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body class="body">
+<div class="questionnaire">
+    <h2 class="questionnaire__name" >Нужна помощь с подбором</h2>
+    <button class="questionnaire__exit">
+        <img src="img/svg-gobbler(19)-1.png" alt="exit sign">
+    </button>
+    <form class="questionnaire-list">
+    <label class="questionnaire-list__data">
+        <span>Ф.И.О.*</span>
+        <input type="text" name="fio" class="questionnaire-list__data-input" required>
+    </label>
+    <label class="questionnaire-list__data">
+        <span>Электронная почта*</span>
+        <input type="email" name="email" class="questionnaire-list__data-input" required>
+    </label>
+    <label class="questionnaire-list__data">
+        <span>Контактный телефон*</span>
+        <input type="tel" name="phone" class="questionnaire-list__data-input" required>
+    </label>
+    <label class="questionnaire-list__data">
+        <span>Комментарий</span>
+        <textarea name="comment" class="questionnaire-list__data-comment"></textarea>
+    </label>
+    <div class="questionnaire-checkbox">
+    <label class="questionnaire-checkbox__policy">
+        <input type="checkbox" name="policy" required checked class="questionnaire-checkbox__policy-custom">
+        <span class="questionnaire-checkbox__policy-text">я соглашаюсь с условиями политики конфеденциальности</span>
+    </label>
+    <div class="questionnaire-checkbox-wrapper">
+        <div class="questionnaire-checkbox-wrapper__info">
+        <button class="questionnaire-checkbox-wrapper__info-send" type="submit">ОТПРАВИТЬ</button>
+        </div>
+    </div>
+    </div>
+    </form>
+    </div>
+</body>
+</html>
