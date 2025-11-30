@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-display: swap;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+    font-display: swap;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-display: swap;
+    font-weight: 500;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+}
+
+.body {
+    background: black;
+}
+
+.questionnaire {
+    position: relative;
+    max-width: 780px;
+    background: #F1F0ED;
+    margin: 50px 50px;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 49px), calc(100% - 30px) 100%, 0 100%);
+}
+
+.questionnaire__name{
+    font: 700 30px/1 "Montserrat" , sans-serif;
+    padding-top: 46px;
+    margin-left: 79px;
+    margin-bottom: 14px;
+}
+
+.questionnaire__exit {
+    position: absolute;
+    left: 738px;
+    top: 22px;
+}
+
+.questionnaire-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 79px;
+}
+
+.questionnaire-list__data {
+    font: 500 17px/1 "Montserrat" , sans-serif;
+    display: flex;
+    flex-direction: column;
+    max-width: 622px;
+    margin-top: 29px;
+    border-bottom: 1px solid #DAD6CE;
+}
+
+.questionnaire-list__data-input {
+    background: #F1F0ED;
+    height: 45px;
+}
+
+.questionnaire-list__data-comment {
+    resize: none;
+    background: #F1F0ED;
+    height: 45px;
+}
+
+.questionnaire-checkbox {
+    display: flex;
+    gap: 52px;
+    margin-top: 86px;
+    margin-bottom: 53px;
+}
+
+.questionnaire-checkbox__policy {
+    display: flex;
+    font: 600 17px/24px "Montserrat" , sans-serif;
+    max-width: 325px;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.questionnaire-checkbox__policy-text {
+    border-bottom: 1px solid #EDBEAE;
+    padding-left: 31px;
+    position: relative;
+}
+
+.questionnaire-checkbox__policy .questionnaire-checkbox__policy-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 13%;
+    width: 21px;
+    height: 15px;
+    background: #FFFFFF;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), calc(100% - 8px) 100%, 0 100%);
+}
+
+.questionnaire-checkbox__policy .questionnaire-checkbox__policy-text::after {
+    content: "";
+    position: absolute;
+    display: none;
+    width: 11px;
+    height: 18px;
+    background-image: url('../img/Vector.png');
+    left: 5px;
+    top: 5%;
+}
+
+.questionnaire-checkbox__policy .questionnaire-checkbox__policy-custom:checked + .questionnaire-checkbox__policy-text::after {
+    display: block;
+}
+
+.questionnaire-checkbox__policy-custom {
+    position: absolute;
+    opacity: 0;
+}
+
+.questionnaire-checkbox-wrapper__info-send {
+    padding: 15.5px 88px 16.5px 67px;
+    color: #E5481D;
+    background-color: #F1F0ED;
+}
+
+.questionnaire-checkbox-wrapper {
+    position: relative;
+    background-color: #DAD6CE;
+    border: 1px solid #DAD6CE;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 49px), calc(100% - 30px) 100%, 0 100%);
+}
+
+.questionnaire-checkbox-wrapper__info {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 49px), calc(100% - 30px) 100%, 0 100%);
+}
+
