@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+}
+
+.content {
+    width: 1920px;
+    background-color: #D9D9D9;
+    padding-bottom: 117px;
+    margin: 100px 100px;
+}
+
+.content-up {
+    max-width: 1420px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 115px;
+    margin-left: 240px;
+}
+
+.content__paragraph {
+    max-width: 580px;
+}
+
+.content__paragraph-head {
+    font: 600 24px/1 "Montserrat" , sans-serif;
+    color: #0A2730; 
+}
+
+.content__paragraph-text {
+    margin-top: 20px;
+    font: 400 20px/1 "Montserrat" , sans-serif;
+    display: grid;
+    gap: 1.5em;
+    color: #0A2730;
+}
+
+.content__achivments {
+    max-width: 700px;
+    width: 100%;
+    height: 386px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns:repeat(2, 1fr);
+}
+
+.content__achivments-block {
+    display: flex;
+    flex-direction: column;
+    background-color: #0083FF;
+    border-radius: 12px;
+} 
+
+.content__achivments-text {
+    max-width: 260px;
+    font: 400 20px/1.2 "Montserrat" , sans-serif;
+    color: #FFFFFF;
+    margin: 12px 0 0 40px;
+}
+
+.content__achivments-advantage {
+    font: 500 48px/1 "Montserrat" , sans-serif;
+    color: #FFFFFF;
+    margin: 20px 0 0 40px; 
+}
+
+.content__achivments-small {
+    font: 500 20px/1 "Montserrat" , sans-serif;
+}
+
+.content-bottom {
+    margin: 72px 0 0 240px;
+    max-width: 1420px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-bottom .content__achivments{
+    height: 416px;
+}
+
+.content-bottom .content__achivments-block {
+    background-color: transparent;
+    border: 1px solid #0083FF;
+}
+
+.content__achivments-img {
+    width: 40px;
+    height: 40px;
+    margin: 40px 0 0 40px;
+}
+
+.content__achivments-wording {
+    font: 600 24px/1 "Montserrat" , sans-serif;
+    color: #0083FF;
+    margin: 20px 0 0 40px;
+}
