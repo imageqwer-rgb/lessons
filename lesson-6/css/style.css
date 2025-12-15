@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1280px;
+    margin-left: 80px;
+}
+
+.features__head{
+    font: 400 36px/1 "Roboto", sans-serif;
+    text-align: center;
+}
+
+.features__wrap {
+    max-width: 1088px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 69.33px;
+    row-gap: 110px;
+}
+
+.features-block {
+    display: flex;
+    flex-direction: column;
+    width: 338.66px;
+    align-items: center;
+}
+
+.features-block__circle1 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #21F7EC;
+}
+
+.features-block__circle2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #33D3BC;
+}
+
+.features-block__circle3 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #18A5C6;
+}
+
+.features-block__circle4 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; 
+    background: #D38F62;
+}
+
+.features-block__circle5 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #F94C43;
+}
+
+.features-block__circle6 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #D399FF;
+}
+.features-block__text {
+    text-align: center;
+}
+
+.interviews {
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    margin-top: 162px;
+    align-items: center;
+    margin-left: 88px;
+}
+
+.interviews__head2 {
+    font: 700 36px/1 "Roboto", sans-serif;
+    text-align: center;
+}
+
+.interviews__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    max-width: 1164px;
+    margin-top: 102.33px;
+    position: relative;
+}
+
+.card {
+    max-width: 287.98px;
+    text-align: center;
+}
+
+.card__quote {
+    font: 700 24px/1 "Roboto", sans-serif;
+    letter-spacing: .6px;
+}
+
+.card__info {
+    font: 400 20px/1 "Roboto", sans-serif;
+    margin-top: 34px;
+}
+
+.card__link {
+    font: 700 18px/1 "Roboto", sans-serif;
+    display: inline-block;
+    margin-top: 44px;
+    color: #000000;
+}
+
+.interviews__cards_fon {
+    background: #F0F0F0;
+    height: 480px;
+    width: 1440px;
+    position: absolute;
+    top: 183px;
+    left: -188px;
+    z-index: -1;
+}
